@@ -39,11 +39,11 @@ public class Calculator extends HttpServlet
         }
         if(request.getParameter("r2")!=null)
         {
-            out.println("<h1>Substraction</h1>"-subFucn(a1, a2));
+            out.println("<h1>Substraction</h1>"+subFucn(a1, a2));
         }
         if(request.getParameter("r3")!=null)
         {
-            out.println("<h1>Multiplication</h1>"*mulFucn(a1, a2));
+            out.println("<h1>Multiplication</h1>"+mulFucn(a1, a2));
         }
         RequestDispatcher rd=request.getRequestDispatcher("/index.jsp");  
         rd.include(request, response);  
