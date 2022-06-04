@@ -5,7 +5,6 @@ pipeline {
         stage('Validate') {
             steps {
                 echo 'Validate..'
-                echo 'hello i am calculator'
             }
         }
         stage('Test') {
