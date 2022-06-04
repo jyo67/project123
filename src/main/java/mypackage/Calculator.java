@@ -20,7 +20,10 @@ public class Calculator extends HttpServlet
 		
 		return first*second;
 	}
-	
+	public long divFucn(long first, long second){
+		
+		return first/second;
+	}
 	
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
@@ -44,6 +47,10 @@ public class Calculator extends HttpServlet
         if(request.getParameter("r3")!=null)
         {
             out.println("<h1>Multiplication</h1>"+mulFucn(a1, a2));
+        }
+	if(request.getParameter("r4")!=null)
+        {
+            out.println("<h1>Division</h1>"+divFucn(a1, a2));
         }
         RequestDispatcher rd=request.getRequestDispatcher("/index.jsp");  
         rd.include(request, response);  
