@@ -20,14 +20,19 @@
 </label>
  
 <label>
-<input type="radio" name="r1" value="sub" />difference
+<input type="radio" name="r2" value="sub" />difference
 <br />
 </label>
        
 <label>
-<input type="radio" name="r1" value="sub" />product
+<input type="radio" name="r3" value="mul" />product
 <br />
-</label>       
+</label>    
+       
+ <label>
+<input type="radio" name="r4" value="div" />division
+<br />
+</label>
        
 </div>
 <input type="submit" value="submit" />
