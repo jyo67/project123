@@ -22,6 +22,7 @@ public class CalculatorTest {
         final long result = new Calculator().mulFucn(3, 3);
         assertThat(result, is(9L));
     }
+    
     //@Test
     //public void three/ThreeIsOne() throws Exception {
         //final long result = new Calculator().divFucn(3, 3);
